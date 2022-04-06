@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAV Store - Oficial</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./splide-3.6.12/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+        <!-- Header 1 -->
+        <div class="header-box">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="./logo-savstore.png" alt="Logotipo" draggable="false">
+                </a>
+            </div>
+
+            <div class="menu-container">
+                <div class="menu-btn" onclick="menu()">
+                    <img src="./svg/menu-categories.svg" alt="menu">
+                </div>
+            </div>
+
+            <div class="header-search">
+                <div class="search">
+                    <img src="./svg/search-icon.svg" alt="Pesquisa" draggable="false">
+                    <input type="search" placeholder="O que você tá procurando?" name="search" id="search">
+                </div>
+            </div>
+            <div class="header-panel">
+                <div class="register ss">
+                    <a href="#">
+                        <div class="panel-icon">
+                            <img src="./svg/login-icon.svg" alt="Login" draggable="false">
+                        </div>
+                    </a>
+                        <div class="panel-text">
+                            <div class="login-part">
+                                <a href="/"><span id="login_btn">Entrar</span></a>
+                                <span style="margin: 0 4px;">ou</span>
+                            </div>
+                            <a href="/"><strong id="register_btn">Cadastrar</strong></a>
+                        </div>
+                </div>
+                <div class="cart ss">
+                    <a href="#">
+                        <div class="panel-icon">
+                            <span id="items-in-cart" id="cart_count">0</span>
+                            <img src="./svg/cart-icon.svg" alt="Login" draggable="false">
+                        </div>
+                        <div class="panel-text">
+                            <a href="/" id="cart_btn"><span>Meu Carrinho</span></a>
+                            <a href="/" id="cart_total"><strong>R$ 0,00</strong></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="header-nav">
+            <ul class="navigation" id="nav">
+
+                <div class="nav-mobile">
+                    <div class="search-mobile">
+                        <button class="nav-spacing">
+                            <img src="./svg/search-icon.svg" alt="Pesquisa" draggable="false">
+                        </button>
+                    </div>
+                    <div class="login-mobile">
+                        <button class="nav-spacing">
+                            <img src="./svg/login-icon.svg" alt="Login" draggable="false">
+                        </button>
+                    </div>
+                    <div class="cart-mobile">
+                        <button class="nav-spacing">
+                            <img src="./svg/cart-icon.svg" alt="Carrinho" draggable="false">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="drop-categories">
+                    <div class="align-category" onclick="category()">
+                        <div class="menu-categories">
+                            <img src="./svg/menu-categories.svg" alt="Burguer">
+                        </div>
+                        <a href="#" id="size-menu-categories">
+                            <button class="btn-categories nav-span">Categorias</button>
+                        </a>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="dropdown" id="drop">
+
+                        <div class="category-container">
+                            <a href="">
+                                <strong class="category-title">Eletrônicos</strong>
+                            </a>
+                            <div class="category-links">
+                                <a href="#">
+                                    <span>Smarth Watch</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <li class="categories">
+                    <a href="#">
+                        <span class="nav-span">Promoções</span>
+                    </a>
+                </li>
+
+                <li class="categories">
+                    <a href="#">
+                        <span class="nav-span">Roupas</span>
+                    </a>
+                </li>
+                <li class="categories">
+                    <a href="#">
+                        <span class="nav-span">Eletrônicos</span>
+                    </a>
+                </li>
+                <li class="categories">
+                    <a href="#">
+                        <span class="nav-span">Tênis</span>
+                    </a>
+                </li>
+                <li class="categories">
+                    <a href="#">
+                        <span class="nav-span">Pronta Entrega</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </header>
+
+
+    <!-- slider -->
+    <div class="main-slider">
+        <div class="splide">
+            <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="./img/042dfc6741.webp" alt="slide" draggable="false">
+                </li>
+                <li class="splide__slide">
+                    <img src="./img/0d8966b596.webp" alt="slide" draggable="false">
+                </li>
+                <li class="splide__slide">
+                    <img src="./img/8292a744e2.webp" alt="slide" draggable="false">
+                </li>
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                    </button>
+                </div>
+            </ul>
+            </div>
+        
+        <!-- progress bar -->
+        <div class="my-slider-progress">
+          <div class="my-slider-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- banner info-->
+    <div class="banner-info">
+        <div class="banner-box">
+
+            <div class="banner-limit-1">
+                <div class="info inf-1">
+                    <img src="./svg/shipping-icon.svg" alt="Informação" draggable="false">
+                    <div class="info-txt">
+                        <span>Entregamos em</span>
+                        <br>
+                        <strong>todo Brasil!</strong>
+                    </div>
+                </div>
+                <div class="info inf-2">
+                    <img src="./svg/credit-card-icon.svg" alt="Informação" draggable="false">
+                    <div class="info-txt">
+                        <span>Parcelamos em</span>
+                        <br>
+                        <strong>até 12x sem juros!</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-limit-2">
+                <div class="info inf-3">
+                    <img src="./svg/pix-icon.svg" alt="Informação" draggable="false">
+                    <div class="info-txt">
+                        <span>Aceitamos PIX</span>
+                        <br>
+                        <strong>Aprovação imediata!</strong>
+                    </div>
+                </div>
+                <div class="info inf-4">
+                    <img src="./svg/security-icon.svg" alt="Informação" draggable="false">
+                    <div class="info-txt">
+                        <span>Compra garantida</span>
+                        <br>
+                        <strong>Loja 100% segura</strong>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="main-categories">
+        <div class="category">
+            <a href="#" class="category-links-a">
+                <div class="category-box">
+                    <img src="./svg/clothes-icon.svg" alt="Categoria" draggable="false">
+                    <span>Roupas</span>
+                </div>
+            </a>
+            <a href="#" class="category-links-a">
+                <div class="category-box">
+                    <img src="./svg/sneakers-icon.svg" alt="Categoria" draggable="false">
+                    <span>Tênis</span>
+                </div>
+            </a>
+            <a href="#" class="category-links-a">
+                <div class="category-box">
+                    <img src="./svg/wristwatch-icon.svg" alt="Categoria" draggable="false">
+                    <span>Relógios</span>
+                </div>
+            </a>
+            <a href="#" class="category-links-a">
+                <div class="category-box">
+                    <img src="./svg/more-icon.svg" alt="Categoria" draggable="false">
+                    <span>Mais categorias</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./splide-3.6.12/dist/js/splide.min.js"></script>
+    <script src="./scripts/slider.js"></script>
+</body>
+</html>
