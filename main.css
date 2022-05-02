@@ -502,6 +502,21 @@
     margin: 18px 40px;
 }
 
+.category-box:hover {
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.category-box:hover span {
+    color: white;
+    transition: 0.3s;
+}
+
+.category-box:hover img {
+    filter: invert(96%) sepia(0%) saturate(14%) hue-rotate(252deg) brightness(104%) contrast(104%);
+    transition: 0.3s;
+}
+
 .category-box img {
     height: 90px;
     padding: 25px 0;
@@ -548,3 +563,165 @@
         margin: 5px 5px;
     }
 }
+
+
+
+/* Highlights */
+
+
+
+
+/* Mais vendidos*/
+.best-sellers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.best-sellers-container {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 4px solid;
+    padding-bottom: 8px;
+}
+
+/* Product */
+.product-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-box {
+    background-color: #ffffff;
+    border-radius: 11px;
+    display: inline-block;
+    padding: 32px 0px 32px 0px;
+    margin: 3px 3px;
+    width: 204px;
+}
+
+.product-box:hover {
+    box-shadow: 0px 1px 8px #00000017;
+    transition: .2s;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+}
+
+.product-image a {
+    text-decoration: none;
+}
+
+.product-image img {
+    max-height: 235px;
+    height: 100%;
+    width: 100%;
+}
+
+.info-product {
+    display: flex;
+}
+
+.info-product a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.product-name {
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 21px 8px 16px 8px;
+    height: 45px;
+}
+
+.product-price {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.price-off {
+    text-decoration-line: line-through;
+    color: #939393;
+    font-size: 14px;
+    margin: 0 4px 0 0;
+}
+
+.price {
+    font-size: 16px;
+    margin: 0 0 0 4px;
+}
+
+.product-payment {
+    text-align: center;
+}
+
+.product-box .view {
+    position: absolute;
+    margin: -37px 65px 0px 0px;
+    max-width: 186px;
+    width: calc(100% - 18px);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    background-color: #222222;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 9px;
+}
+
+.product-container {
+    flex-wrap: wrap;
+}
+
+.product-box:hover .view {
+    opacity: 1;
+    transition: .4s;
+}
+
+.view:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 500px) {
+    .product-box {
+        width: 150px;
+        padding: 32px 7px 32px 7px;
+    }
+    .product-box .view {
+        position: relative;
+    }
+}
+
+@media (max-width: 390px) {
+    .product-box {
+        margin: 3px 3px;
+    }
+}
+
+@media (max-width: 349px) {
+    .product-box {
+        padding: 0;
+        margin: 17px 5px;
+        border: none;
+    }
+}
+
+
+
